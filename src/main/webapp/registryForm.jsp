@@ -25,16 +25,24 @@
     </tr>
   <tr>
       <td class="evenRow">
+        <s:fielderror fieldName = "invoiceBean.fromDate" />
         <s:text name="form.fromDate.message"/>
         <sx:datetimepicker id="dateFrom" name="invoiceBean.dateFrom"/>
       </td>
     </tr>
   <tr>
     <td class="evenRow">
+       <s:fielderror fieldName = "invoiceBean.toDate" />
        <s:text name="form.toDate.message"/>
        <sx:datetimepicker id="dateTo" name="invoiceBean.dateTo" />
     </td>
-
+  </tr>
+  <tr>
+    <td class="evenRow">
+       <s:fielderror fieldName = "invoiceBean.price" />
+       <s:text name="form.price.message"/>
+       <s:textfield id="price" name="invoiceBean.price" />
+    </td>
   </tr>
   <tr>
     <td class="evenRow">
